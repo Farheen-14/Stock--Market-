@@ -12,7 +12,7 @@ Stock-Details
 {% endfor %}
 {% endif %}
 <div class="container">
-    <h1>Search-Items : </h1>        
+    <h1>Search-Items</h1>        
     <div class="searching">    
         {% if data|length < 1 %} 
         <code>No search results Your search query : <b>{{query}}</b> did not match any documents.</code> <br><br>
@@ -45,7 +45,6 @@ Stock-Details
 
     h1 {
         margin: 5% 31%;
-
         text-align: center;
         border-bottom: 3px solid rgb(28, 91, 228);
         padding: 2%;
@@ -68,6 +67,7 @@ Stock-Details
 
     .btn.btn-outline-primary {
         border-radius: 20px;
+        font-size: 0.8rem;
     }
 
     b {
@@ -81,7 +81,7 @@ Stock-Details
 
     @media screen and (max-width: 990px) {
         h1 {
-            margin: 5% 31%;
+            margin: 5% 28%;
             text-align: center;
             font-size: 2rem;
             border-bottom: 3px solid rgb(28, 91, 228);
@@ -90,7 +90,7 @@ Stock-Details
         }
 
         .display {
-            margin-left: 30%;
+            margin-left: 25%;
             margin-right: 25%;
             text-align: left;
         }
@@ -99,13 +99,9 @@ Stock-Details
             margin-top: 10%;
             font-size: 1.2rem;
         }
-
-        .btn.btn-outline-primary {
-            border-radius: 20px;
-        }
     }
 
-    @media screen and (max-width: 780px) {
+    @media screen and (max-width: 770px) {
         h1 {
             margin: 5% 31%;
             text-align: center;
@@ -116,7 +112,7 @@ Stock-Details
         }
 
         .display {
-            margin-left: 10%;
+            margin-left: 20%;
             margin-right: 20%;
             text-align: left;
         }
@@ -126,9 +122,100 @@ Stock-Details
             font-size: 1rem;
         }
 
-        .btn.btn-outline-primary {
-            border-radius: 20px;
-            font-size: 0.8rem;
+        button.btn.btn-outline-primary {
+            font-size: 0.7rem;
+            margin-right: 20%;
+
+        }
+    }
+    @media screen and (max-width: 550px) {
+        h1 {
+            margin: 3% 25%;
+            text-align: center;
+            font-size: 1.6rem;
+            border-bottom: 3px solid rgb(28, 91, 228);
+            padding: 1%;
+
+        }
+
+        .display {
+            margin-left: 12%;
+            margin-right: 12%;
+            text-align: left;
+        }
+
+        h2 {
+            margin-top: 15%;
+            font-size: 1rem;
+        }
+        p{
+            font-size : 0.8rem
+        }
+        button.btn.btn-outline-primary {
+            font-size: 0.6rem;
+            margin-right: 30%;
+
+        }
+        iframe {
+            height: 40vh;
+            width: 60vh;
+            margin-left: 0%;
+        }
+    }
+    @media screen and (max-width: 450px) {
+        h1 {
+            margin: 3% 25%;
+            text-align: center;
+            font-size: 1.4rem;
+            border-bottom: 3px solid rgb(28, 91, 228);
+            padding: 1%;
+
+        }
+
+        .display {
+            margin-left: 8%;
+            margin-right: 8%;
+            text-align: left;
+        }
+
+        h2 {
+            margin-top: 20%;
+            font-size: 1rem;
+        }
+
+        button.btn.btn-outline-primary {
+            font-size: 0.6rem;
+            margin-right: 20%;
+
+        }
+        iframe {
+            height: 35vh;
+            width: 45vh;
+            margin-left: 0%;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        h1 {
+            margin: 3% 25%;
+            text-align: center;
+            font-size: 1.3rem;
+            border-bottom: 3px solid rgb(28, 91, 228);
+            padding: 1%;
+
+        }
+
+        .display {
+            margin-left: 5%;
+            margin-right: 5%;
+            text-align: left;
+        }
+
+        iframe {
+            height: 30vh;
+            width: 40vh;
+        }
+        p{
+            font-size: 0.7rem;
         }
     }
 </style>

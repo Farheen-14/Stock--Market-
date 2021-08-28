@@ -27,7 +27,7 @@ SECRET_KEY = 'kmfb3%^!bmcvi1@9z2#m7k4t+ae&mczqj6k5n*8b&0ih5qleoh'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'stock-marketing.herokuapp.com', '127.0.0.1:8000'
+    # 'stock-marketing.herokuapp.com', '127.0.0.1:8000'
     ]
 
 

@@ -19,7 +19,7 @@
         <div class="form">
             <form action="{% url 'signup' %}" class="submition" method="POST">
                 {% csrf_token %}
-                <div class="d-grid gap-2 col-8 mx-auto">
+                <div class="d-grid gap-3 col-8 mx-auto">
                     <h2>User Sign-Up</h2>
                     <div class="details">
                         <div class="mb-3">
@@ -70,12 +70,12 @@
 
     h2 {
         margin-top: 5%;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         border-bottom: 3px solid rgb(28, 91, 228);
         padding: 1%;
         text-align: center;
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 22%;
+        margin-right: 22%;
     }
     .form-text{
         color: white;
@@ -95,6 +95,7 @@
         border-radius: 20px;
         font-size: 0.9rem;
     }
+
     @media screen and (max-width: 780px) { 
         h2 {
             margin-top: 10%;
@@ -115,7 +116,7 @@
         font-size: 0.8rem;
     }
     }
-    @media screen and (max-width: 450px) { 
+    @media screen and (max-width: 480px) { 
         .form-control{
             font-size: 0.7rem;
             padding: 2% !important;
@@ -128,11 +129,20 @@
             font-size: 0.6rem;
         }
         h2 {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             padding: 1%;
             text-align: center;
-            margin-left: 10%;
-            margin-right: 10%;
+            margin-left: 18%;
+            margin-right: 18%;
+        } 
+    }
+    @media screen and (max-width: 350px) { 
+            h2 {
+            font-size: 1.2rem;
+            padding: 1%;
+            text-align: center;
+            margin-left: 14%;
+            margin-right: 14%;
         } 
     }
 </style>
